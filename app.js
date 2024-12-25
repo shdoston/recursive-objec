@@ -63,13 +63,18 @@
 
 
 // 2
-// function natural (n,a,b) {
-// let sum  = `n+a+b`
-// let mus =`(n+a+b)+sum`
-// return mus
+// let n= 5
+// let a = 2
+// let b= 3
+// let ansver = [a,b]
+// for (let i = 0; i<n-2; i++){
+// let counter= 0
+// for( let k= 0; k<ansver.length; k++){
+//     counter+= ansver[k]
 // }
-
-// console.log(natural (2,3,5))
+// ansver.push(counter)
+// }
+// console.log(ansver)
 // function tesksriMasiv (arr){
 // let result = [1,2,3,4,5]
 //    return result.reverse()   
@@ -158,15 +163,53 @@
 // let s= juftToq (arr)
 // console.log(s)
 // 11
-let arr = [1, 6, 9, 5, 8, 10, 15]
-let result = 0
-function rangeSum(arr, K, L) {
-    for (let i = K; i <=L; i++){
-        result += (arr[i])
+// let arr = [1, 6, 9, 5, 8, 10, 15]
+// let result = 0
+// function rangeSum(arr, K, L) {
+//     for (let i = K; i <=L; i++){
+//         result += (arr[i])
+//     }
+//     return result
+// }
+// console.log(rangeSum(arr,2,6))
+
+// let arr = ['abdulaziz',10,false,null]
+// let truthy = []
+// let falsey = []
+// for(let i= 0; i < arr.length; i++){
+//     if(arr[i]){
+//         truthy.push(arr[i])
+//     } else {
+//         falsey.push(arr[i])
+//     }
+// }
+
+// console.log(truthy,falsey   )
+// 
+// function getEvenMax(arr) {
+//     let toq = null;
+//     for (let i = 1; i < arr.length; i += 2) {
+//         toq = toq === null ? arr[i] : Math.max(toq, arr[i]);
+//     }
+//     return toq;
+// }
+
+
+// console.log(getEvenMax([1, 7, 3, 9, 5, 2]));
+
+function getEvenMax(arr) {
+    let juft = 0;
+    for (let i = 1; i < arr.length; i ++) {
+        juft = juft === 0 ? arr[i] : Math.min(juft, arr[i]);
     }
-    return result
+    return juft;
 }
-console.log(rangeSum(arr,2,6))
+
+
+console.log(getEvenMax([12, 42, 10, 4, 8, 2]));
+
+
+
 
    
 
